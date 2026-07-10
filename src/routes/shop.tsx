@@ -96,7 +96,7 @@ function ShopPage() {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                navigate({ search: (prev) => ({ ...prev, q: search }) });
+                navigate({ search: (prev: typeof searchSchema._type) => ({ ...prev, q: search }) });
               }}
               className="flex items-center border-b border-foreground/20"
             >
@@ -112,7 +112,7 @@ function ShopPage() {
               aria-label="Sort"
               value={sort}
               onChange={(e) =>
-                navigate({ search: (prev) => ({ ...prev, sort: e.target.value }) })
+                navigate({ search: (prev: typeof searchSchema._type) => ({ ...prev, sort: e.target.value }) })
               }
               className="hairline border border-foreground/15 bg-background px-3 py-2"
             >
