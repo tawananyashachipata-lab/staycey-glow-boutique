@@ -1,7 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { Instagram, Facebook, MessageCircle, Check } from "lucide-react";
 import heroImg from "@/assets/hero-perfume.jpg";
 import { ProductCard } from "@/components/product-card";
 import { categories, categoryImages, products } from "@/lib/products";
+import { social, whatsappLink } from "@/lib/social";
 
 export const Route = createFileRoute("/")({
   component: Home,
