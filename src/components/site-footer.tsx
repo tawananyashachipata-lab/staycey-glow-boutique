@@ -89,7 +89,7 @@ export function SiteFooter() {
           </span>
           <div className="flex items-center gap-6">
             <a
-              href="https://instagram.com"
+              href={social.instagram}
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
@@ -98,7 +98,16 @@ export function SiteFooter() {
               <Instagram className="h-4 w-4" />
             </a>
             <a
-              href="https://facebook.com"
+              href={whatsappLink()}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="WhatsApp"
+              className="transition-colors hover:text-primary"
+            >
+              <MessageCircle className="h-4 w-4" />
+            </a>
+            <a
+              href={social.facebook}
               target="_blank"
               rel="noreferrer"
               aria-label="Facebook"
