@@ -139,6 +139,7 @@ function RootComponent() {
           </main>
           <SiteFooter />
         </div>
+        <WhatsAppFloat />
         <Toaster position="bottom-right" theme="light" />
       </StoreProvider>
     </QueryClientProvider>
