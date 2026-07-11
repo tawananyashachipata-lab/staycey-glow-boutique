@@ -1,7 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { toast } from "sonner";
+import { Instagram, Facebook, MessageCircle } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
+import { social, whatsappLink } from "@/lib/social";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
