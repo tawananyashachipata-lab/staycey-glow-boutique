@@ -60,6 +60,51 @@ function ContactPage() {
                 75002 Paris, France
               </p>
             </div>
+            <div>
+              <p className="eyebrow">Follow the Glow</p>
+              <p className="mt-2 max-w-sm text-sm text-muted-foreground">
+                Follow Staycey Glow for new arrivals, special offers, and
+                beauty tips.
+              </p>
+              <div className="mt-4 flex items-center gap-3">
+                <a
+                  href={social.instagram}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-foreground/15 transition-colors hover:bg-foreground hover:text-background"
+                >
+                  <Instagram className="h-4 w-4" />
+                </a>
+                <a
+                  href={whatsappLink()}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="WhatsApp"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-foreground/15 transition-colors hover:bg-[#25D366] hover:text-white"
+                >
+                  <MessageCircle className="h-4 w-4" />
+                </a>
+                <a
+                  href={social.facebook}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Facebook"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-foreground/15 transition-colors hover:bg-foreground hover:text-background"
+                >
+                  <Facebook className="h-4 w-4" />
+                </a>
+              </div>
+              <a
+                href={whatsappLink()}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-6 py-3 text-sm font-medium text-white shadow-md transition-transform hover:scale-105"
+              >
+                <MessageCircle className="h-4 w-4" />
+                Chat on WhatsApp
+              </a>
+            </div>
           </div>
           <form
             onSubmit={(e) => {
